@@ -4,8 +4,12 @@ import { useState } from "react";
 import { Container } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { TextDecrypt } from "../content/TextDecrypt";
+import { Typography, Link } from '@material-ui/core';
+import {
+  ResumeIcon
+} from '../content/ResumeButton';
 import  Skills from "../Skills/Skills";
-
+import web from './web.png'
 import './Works.css';
 
 // Import ../../assets/recentprojects/
@@ -34,6 +38,7 @@ export const Works = () => {
       the background element.`,
       alter: 'React Portfolio',
       image: `${Portfolio}`,
+      link:" "
     },
     { 
       id: 2,
@@ -42,6 +47,7 @@ export const Works = () => {
       MERN stack MogoDB ExpressJS ReactJS NodeJS.`,
       alter: 'VeriTru Project',
       image: `${Veritru}`,
+      link:"https://resilient-baklava-632d82.netlify.app"
     },
     { 
       id: 3,
@@ -50,6 +56,7 @@ export const Works = () => {
       MogoDB ExpressJS ReactJS NodeJS .`,
       alter: 'LoFo Project',
       image: `${Lofo}`,
+      link:"https://caption-frontend.vercel.app/"
     },
     { 
       id: 4,
@@ -58,6 +65,7 @@ export const Works = () => {
       built using MERN stack to demonstrate the CRUD capabilities of the tech stack.`,
       alter: 'Startup Project',
       image: `${Startup}`,
+      link:"https://serene-alfajores-2ed378.netlify.app"
     },
     // { 
       // id: 5,
@@ -86,6 +94,10 @@ export const Works = () => {
               <p className="description">
                 { project.description }
               </p>
+              <p className="description">
+                <Link href= {`${project.link}`} target='_blank'><img className="web" src={web} alt={web}/></Link>{ }
+              </p>
+
             </div>
           </div>
         ))}
