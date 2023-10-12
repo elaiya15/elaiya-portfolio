@@ -1,24 +1,82 @@
 .app{
-    width: 75%;
+
+    width: 83%;
     margin-top:2rem ;
-    margin-left: 15rem;
+    margin-left: 10rem;
+    position: relative;
+   
     height: auto;
     flex-direction: row;
+    /* background-color: blue; */
 
 }
-.img{
-    height: 250px;
-    margin-left: 1rem;
+.imagecontiner{ 
+margin-top: 20px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+column-gap: 50px;
+row-gap: 70px;
+border-radius: 10px;
+
 }
-.ttle {
-    font-size: 1.5rem;
-    margin: 0;
-  }
-.img1{
+.image{
+    display: flex;
+   flex-direction: row;
+   justify-content: center;
+   box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    border-radius: 20px;
+   height: 210px;
+   width: 260px;
+
+}
+
+.html{
+    height: 200px;
+   width: 130px;
+}
+.css{
     height: 220px;
-    margin-left: 2rem;
+    width: 180px;
 }
-.img2{
+.react{
+    height: 190px;
+   width: 200px;
+}
+.redux{
+    height: 220px;
+   width: 200px;
+}
+.node{
+
+    height: 200px;
+   width: 260px;
+}
+.express{
+    border-radius: 15px;
+    height: 210px;
+   width: 260px;
+}
+.api{
+    height: 210px;
+   width: 180px;
+}
+.mysql{
+    height: 200px;
+   width: 290px;
+}
+.mongodb{
+    height: 250px;
+   width: 290px;
+}
+.aws{
+    height: 190px;
+   width: 270px;
+}
+
+/* .img2{
     height: 180px;
     margin-left: -4rem;
     margin-top: 2rem;
@@ -50,9 +108,9 @@
     height: 190px;
     width: 300px;
     margin-left:15rem;
-}
+} */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .app{
         width: 75%;
         margin-top:2rem ;
@@ -101,9 +159,9 @@
     width: 250px;
     margin-left:1rem;
     margin-top: 1rem;
-}
+} */
 
-}
+/* } */
 
 
 /* @media (max-width: 1024px) { */

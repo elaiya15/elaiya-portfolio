@@ -20,7 +20,7 @@
   background: transparent;
 }
 html {
-  overflow: scroll;
+  overflow-y: scroll;
   overflow-x: hidden;
   font-size: 16px;
   scroll-behavior: smooth;
