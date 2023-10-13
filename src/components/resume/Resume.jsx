@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
   footerText: {
     position: 'fixed',
     bottom: theme.spacing(6),
-    left: theme.spacing(6),
+    left: theme.spacing(2),
     '&:hover': {
       color: theme.palette.primary.main,
     },

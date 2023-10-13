@@ -54,14 +54,15 @@
 }
 @media (max-width: 768px) {
   .project {
-    margin-left: 4em;
+    margin-left: 2.6em;
     margin-right: 4em;
     flex-direction: column;
   }
   .__img_wrapper {
+   
     width: 340px;
   }
   .__content_wrapper {
-    width: 70%;
+    width: 90%;
   }
 }

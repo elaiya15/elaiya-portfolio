@@ -1,6 +1,6 @@
 .displacement-sphere {
     position: fixed;
-    width: 100vw;
+    width: auto;
     top: 0;
     right: 0;
     bottom: 0;
