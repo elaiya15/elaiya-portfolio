@@ -10,13 +10,16 @@ import {
 } from '../content/ResumeButton';
 import  Skills from "../Skills/Skills";
 import web from './web.png'
+import git from './github1.png'
+import git2 from './github2.png'
 import './Works.css';
 
 // Import ../../assets/recentprojects/
-import Portfolio from '../../assets/recentprojects/react-portfolio.png';
-import Veritru from '../../assets/recentprojects/veritru.png';
-import Lofo from '../../assets/recentprojects/lofo.png';
-import Startup from '../../assets/recentprojects/startup.png';
+// import Portfolio from '../../assets/recentprojects/react-portfolio.png';
+import Shopping from '../../assets/recentprojects/E-commers1.png';
+import Inventory from '../../assets/recentprojects/inventre2.png';
+import Job from '../../assets/recentprojects/job3.png';
+import Dashboard from '../../assets/recentprojects/Dashboard.png';
 // import Lacalle from '../../assets/recentprojects/lacalle.png';
 
 const useStyles = makeStyles((theme) => ({
@@ -30,52 +33,50 @@ const useStyles = makeStyles((theme) => ({
 export const Works = () => {
   const classes = useStyles();
   const [projects, setProjects] = useState([
+
     { 
       id: 1,
-      title: 'React Portfolio', 
-      description: `Designed and developed a ReactJS portfolio 
-      with fancy 3D animations using Three.js for 
-      the background element.`,
-      alter: 'React Portfolio',
-      image: `${Portfolio}`,
-      link:" "
+      title: 'Shopping website', 
+      description: `An E-commerce  project website built using
+      MERN stack MogoDB ExpressJS ReactJS NodeJS. & Redux, Razorpay payment gateway`,
+      alter: 'Shopping Project',
+      image: `${Shopping}`,
+      link:"https://e-commers-front-end.vercel.app/",
+      github:"https://github.com/elaiya15/E-commers-front-end",
+      backEnd:"https://github.com/elaiya15/e-commers-backend"
     },
     { 
       id: 2,
-      title: 'Shopping website', 
-      description: `An E-commerce  project website built using
-      MERN stack MogoDB ExpressJS ReactJS NodeJS.`,
-      alter: 'VeriTru Project',
-      image: `${Veritru}`,
-      link:"https://resilient-baklava-632d82.netlify.app"
+      title: 'Inventory management', 
+      description: `Inventory/asset management website built using MERN stack 
+      MogoDB Express.JS React.JS Node.JS. & Redux `,
+      alter: 'Inventory Project',
+      image: `${Inventory}`,
+      link:"https://inventry-management-system.vercel.app/",
+      github:"https://github.com/elaiya15/Inventry-management-system",
+      backEnd:"https://github.com/elaiya15/job-backend"
     },
     { 
-      id: 3,
-      title: 'Inventory management', 
-      description: `Inventory/asset management website built using MERN stack
-      MogoDB ExpressJS ReactJS NodeJS .`,
-      alter: 'LoFo Project',
-      image: `${Lofo}`,
-      link:"https://caption-frontend.vercel.app/"
+      id:3,
+      title: 'Job Portal', 
+      description: `Job search Portal it's  similar to  Naukri job search Portal. This  website built using
+      MERN stack MogoDB ExpressJS ReactJS NodeJS. & Redux `,
+      alter: 'Job Portal',
+      image: `${Job}`,
+      link:"https://job-app-two.vercel.app/",
+      github:" https://github.com/elaiya15/job--app",
+      backEnd:"https://github.com/elaiya15/job-backend"
     },
     { 
       id: 4,
-      title: 'User Data', 
-      description: `A website portfolio project for the Startup Dev Team
-      built using MERN stack to demonstrate the CRUD capabilities of the tech stack.`,
-      alter: 'Startup Project',
-      image: `${Startup}`,
-      link:"https://serene-alfajores-2ed378.netlify.app"
+      title: 'Dashboard', 
+      description: `A Dashboard website is Normal html, css, js files. it has been modified to ReactJS`,
+      alter: 'Dashboard Project',
+      image: `${Dashboard}`,
+      link:"https://resonant-semifreddo-f3e697.netlify.app/",
+      github:"https://github.com/elaiya15/sb-admin",
     },
-    // { 
-      // id: 5,
-      // title: 'LaCalle Cafe', 
-      // description: `A website project for the La Calle Cafe business
-      // built using Wordpress and PHP with integrated SEO tools to help
-      // the business ramp up its prospects and lead generation.`,
-      // alter: 'Startup Project',
-      // image: `${Lacalle}`,
-    // },
+    
   ]);
 
   return (
@@ -95,14 +96,15 @@ export const Works = () => {
                 { project.description }
               </p>
               <p className="description">
-                <Link href= {`${project.link}`} target='_blank'><img className="web" src={web} alt={web}/></Link>{ }
+                <Link href= {`${project.link}`} target='_blank'><img className="web" src={web} alt={web}/>  View Demo</Link><br/><br/>
+                <Link href= {`${project.github}`} target='_blank'><img className="web" src={git2} alt={git2}/>  Github Code </Link>
+                
               </p>
 
             </div>
           </div>
         ))}
-        {/* <Skills/> */}
-  
+       
       </Container>
     </section>
   );
