@@ -192,7 +192,7 @@ border-radius: 10px;
  }   */
 
 
- @media (max-width: 360px) { 
+ @media (max-width: 425px) { 
     .app{
 
         width: 70%;
